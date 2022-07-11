@@ -64,22 +64,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2Q-fN-8qs">
-                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2Q-fN-8qs">
+                                <rect key="frame" x="8" y="833" width="398" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DIf-Yy-7fX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1LG-D5-5WY">
+                                <rect key="frame" x="7" y="248" width="400" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="2Pe-Xs-Sof"/>
+                                    <constraint firstAttribute="height" constant="400" id="pxf-UN-BIj"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Nh6-5f-ms2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="W2Q-fN-8qs" firstAttribute="centerX" secondItem="pHF-dz-V66" secondAttribute="centerX" id="lGu-Jy-iar"/>
-                            <constraint firstItem="W2Q-fN-8qs" firstAttribute="centerY" secondItem="pHF-dz-V66" secondAttribute="centerY" id="ynf-V7-F8Z"/>
+                            <constraint firstItem="W2Q-fN-8qs" firstAttribute="leading" secondItem="Nh6-5f-ms2" secondAttribute="leading" constant="8" id="3tA-uZ-uyD"/>
+                            <constraint firstItem="1LG-D5-5WY" firstAttribute="centerX" secondItem="pHF-dz-V66" secondAttribute="centerX" id="ISp-bj-NrU"/>
+                            <constraint firstItem="1LG-D5-5WY" firstAttribute="centerY" secondItem="pHF-dz-V66" secondAttribute="centerY" id="NVd-WN-TUE"/>
+                            <constraint firstItem="Nh6-5f-ms2" firstAttribute="trailing" secondItem="W2Q-fN-8qs" secondAttribute="trailing" constant="8" id="gAI-YP-oL6"/>
+                            <constraint firstItem="Nh6-5f-ms2" firstAttribute="bottom" secondItem="W2Q-fN-8qs" secondAttribute="bottom" constant="8" id="z2m-sB-eDv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xrD-Je-HKi"/>
                     <connections>
+                        <outlet property="detailImage" destination="1LG-D5-5WY" id="O0l-1x-ZzR"/>
                         <outlet property="detailLabel" destination="W2Q-fN-8qs" id="cvJ-Bw-enB"/>
                     </connections>
                 </viewController>

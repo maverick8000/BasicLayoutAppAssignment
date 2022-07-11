@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         
         self.tableView.backgroundColor = .systemPink
         self.tableView.dataSource = self
+        self.tableView.delegate = self
         
         self.tableView.register(UINib(nibName: "XIBTableViewCell", bundle: nil), forCellReuseIdentifier: "XIBTableViewCell")
         
@@ -66,6 +67,29 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         }
                 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = storyBoard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {return}
+        
+        //vc.text = "Navigation Controller Presentation X"
+        vc.text = "indexPath: \(indexPath)"
+        var dragonType: String?
+        if indexPath.section + indexPath.row % 2 == 0
+        {
+            dragonType = "reddragon"
+        }
+        else
+        {
+            dragonType = "greendragon"
+            
+        }
+        vc.dragonType = dragonType
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
     
     

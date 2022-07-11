@@ -13,7 +13,6 @@
 		8B407CA7287B869100437028 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B407CA5287B869100437028 /* Main.storyboard */; };
 		8B407CA9287B869100437028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B407CA8287B869100437028 /* Assets.xcassets */; };
 		8B407CAC287B869100437028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B407CAA287B869100437028 /* LaunchScreen.storyboard */; };
-		8B407CB4287B886000437028 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B407CB3287B886000437028 /* TableViewController.swift */; };
 		8B407CB7287B890100437028 /* XIBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B407CB5287B890100437028 /* XIBTableViewCell.swift */; };
 		8B407CB8287B890100437028 /* XIBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B407CB6287B890100437028 /* XIBTableViewCell.xib */; };
 		8BC26785287BACD8006A8A77 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC26784287BACD8006A8A77 /* DetailViewController.swift */; };
@@ -28,7 +27,6 @@
 		8B407CA8287B869100437028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B407CAB287B869100437028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B407CAD287B869100437028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B407CB3287B886000437028 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		8B407CB5287B890100437028 /* XIBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBTableViewCell.swift; sourceTree = "<group>"; };
 		8B407CB6287B890100437028 /* XIBTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBTableViewCell.xib; sourceTree = "<group>"; };
 		8BC26784287BACD8006A8A77 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 		8B407C9E287B869100437028 /* BasicLayoutApp4 */ = {
 			isa = PBXGroup;
 			children = (
-				8B407CB3287B886000437028 /* TableViewController.swift */,
 				8B407CA3287B869100437028 /* ViewController.swift */,
 				8B407CB5287B890100437028 /* XIBTableViewCell.swift */,
 				8B407CB6287B890100437028 /* XIBTableViewCell.xib */,
@@ -156,7 +153,6 @@
 				8B407CB7287B890100437028 /* XIBTableViewCell.swift in Sources */,
 				8BC26785287BACD8006A8A77 /* DetailViewController.swift in Sources */,
 				8B407CA2287B869100437028 /* SceneDelegate.swift in Sources */,
-				8B407CB4287B886000437028 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

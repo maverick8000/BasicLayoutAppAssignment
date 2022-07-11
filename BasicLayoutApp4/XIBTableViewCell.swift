@@ -33,9 +33,7 @@ class XIBTableViewCell: UITableViewCell {
         
         vc2.text = "Navigation Controller Presentation 2"
         
-        //self.superview?.naviga
-        //self.navigationControllerButtonPressed(DetailViewController)
-        
+        //self.superview?.naviga        
                 
     }
     

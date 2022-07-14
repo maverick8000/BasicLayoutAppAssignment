@@ -29,7 +29,7 @@ class XIBTableViewCell: UITableViewCell {
     @IBAction func myDetailButtonPressed(_ sender: Any) {
         
         let storyBoard2 = UIStoryboard(name: "Main", bundle: nil)
-        guard let vc2 = storyBoard2.instantiateViewController(withIdentifier: "DetailNonSegueViewController") as? DetailViewController else {return}
+        guard let vc2 = storyBoard2.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {return}
         
         vc2.text = "Navigation Controller Presentation 2"
         

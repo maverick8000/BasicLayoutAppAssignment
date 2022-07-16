@@ -33,7 +33,7 @@ class XIBTableViewCell: UITableViewCell {
         
         vc2.text = "Navigation Controller Presentation 2"
         
-        print("I was tapped!")
+        print("Internal cell button was tapped!!!")
         //self.superview?.naviga        
                 
     }
